@@ -9,4 +9,4 @@ new mysql.Database({
     if (err)
         return console.error(err);
 
-})
+});
