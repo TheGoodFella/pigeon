@@ -7,6 +7,7 @@ ws.onopen = function (e) {
 ws.onmessage = function (data) {
     console.log("TRANSMISSION INCOMING");
 
+    // Parses the message 
     msg = JSON.parse(data.data);
     msg.data = JSON.parse(msg.data);
 
@@ -17,5 +18,4 @@ ws.onmessage = function (data) {
 
 ws.onclose = function (e) {
     alert("Connection lost.");
-    1
 };
