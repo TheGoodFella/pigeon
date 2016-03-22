@@ -4,7 +4,7 @@ Pigeon is a web broadcast chat. Pigeon is made of channels which you can join, a
 # Dependencies
 Pigeon depends on different node.js modules to work.
 
-*ws
-*mysql
+* ws
+* mysql
 
 Pigeon does not include these modules so you must have them installed for Pigeon to work.
