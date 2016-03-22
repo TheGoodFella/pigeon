@@ -9,4 +9,5 @@ The frontend is light and responsive and uses WebSockets to communicate with the
 Pigeon depends on different node.js modules to work:
 * ws
 * mysql
+
 Pigeon does not include these modules out of the box so you must have them installed for Pigeon to work.
