@@ -1,4 +1,3 @@
-# [UNDER DEVELOPEMENT]
 # Pigeon
 Pigeon is a web broadcast chat. Pigeon is made of channels which you can join, and you can text to other people through them. Pigeon works in real time. Pigeon is cool, isn't it?
 
@@ -12,3 +11,5 @@ Pigeon depends on different node.js modules to work:
 * mysql
 
 Pigeon does not include these modules out of the box so you must have them installed for Pigeon to work.
+
+Pigeon should stop to talk about himself in third person.
