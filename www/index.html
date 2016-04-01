@@ -11,6 +11,13 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="pigeon.js"></script>
 	<script src="angular.min.js"></script>
+    <script>
+        var app = angular.module('pigeon',[]);
+        app.controller('ctrl',function($scope){
+            $scope.firstName="John";
+            $scope.lastName="Doe";
+        });
+    </script>
     <style>
         /* Set height of the grid so .sidenav can be 100% (adjust if needed) 
         
@@ -72,9 +79,10 @@
             <div class="col-sm-9">
                 <div class="label label-primary">Lorem</div>
                 <div class="label label-success">Ipsum</div>
-				<div data-ng-app="">
-				<p>TXT: <input type="=text" data-ng-model="input"></input></p>
-					<p>you have written: {{input}}</p>
+				<div ng-app="pigeon" ng-controller="ctrl">
+				First name: <input type="text" ng-model="firstName"><br />
+                Last name: <input type="text" ng-model="lastName"> <br />
+                Full name {{firstName+" "+lastName}}
 				</div>
             </div>
         </div>
