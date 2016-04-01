@@ -12,4 +12,4 @@ Pigeon depends on different node.js modules to work:
 
 Pigeon does not include these modules out of the box so you must have them installed for Pigeon to work.
 
-Pigeon should stop to talk about himself in third person.
+> Pigeon should stop to talk about himself in third person.
