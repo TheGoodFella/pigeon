@@ -79,4 +79,4 @@ DELIMITER ;
 
 
 /*CREATE A SQL USER TO REMOTELY ACCESS THE DB*/
-GRANT ALL ON `PIGEON`.* to 'pigeon'@'localhost' identified by 'pigeon';
+GRANT ALL ON `PIGEON`.* to 'pigeon'@'%' identified by 'pigeon';
