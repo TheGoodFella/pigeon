@@ -1,5 +1,4 @@
-var msgPosY=0;
-var yIncreaser=0;
+var msgCount=0;
 
 var ws = new WebSocket('ws://' + location.host + ':6969', 'echo-protocol');
 
@@ -23,18 +22,26 @@ ws.onclose = function (e) {
     alert("Connection lost.");
 };
 
-function addrecmsg()
+function addmsg(isSent)
 {    
     var div = document.createElement('div');
-    div.className="messageRec";
-    div.textContent="message received";
-    document.getElementById("chat").appendChild(div);
-}
+    if(isSent)
+        div.className="messageRec";
+    else
+        div.className="messageSen";
+    if(isSent)
+        div.textContent="message received";
+    else
+        div.textContent="message sent";
+    div.id=msgCount.toString();
+    msgCount++;
+    $(div).appendTo("#chat");
 
-function addsenmsg()
-{
-    var div = document.createElement('div');
-    div.className="messageSen";
-    div.textContent="message sent";
-    document.getElementById("chat").appendChild(div);
+     $(div).animate({
+        color: "green"
+    }, 200);
+
+    $(div).animate({
+        color: "black"
+    }, 300);
 }
