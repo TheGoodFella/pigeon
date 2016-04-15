@@ -1,0 +1,22 @@
+body, html{
+height: 100%;
+}
+
+#all {
+    width: 100%;
+    height: 100%;
+    background-color: #CCF;
+}
+#channels{
+    float:left;
+    width: 30%;
+    background-color:beige;
+}
+
+#chat {
+    float: right;
+    width: 70%;
+    height: 100%;
+    background-color:azure;
+    border:1px dotted;
+}
