@@ -57,8 +57,8 @@
 </head>
 
 <body>
-    <input type="button" value="add message by other" onclick="addothrmsg()">
-    <input type="button" value="add message by me">
+    <input type="button" value="add message by other" onclick="addrecmsg()">
+    <input type="button" value="add message by me" onclick="addsenmsg()">
         <div class="all">
             <div class="channels">
                 <h4>Your channels</h4>
@@ -79,16 +79,7 @@
                 </div>
             </div>
 
-            <div class="chat">
-				<div class="msgothrdiv" id="othmsg">
-                    
-                </div>
-                <div class="mymsgdiv">
-                    <div class="mymsg">
-                        me
-                        text:
-                    </div>
-                </div>
+            <div class="chat" id="chat">
             </div>
         </div>
 

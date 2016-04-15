@@ -35,12 +35,16 @@ height: 100%;
     background-color:floralwhite;
 }
 
-.msgothr{
-    margin: 3px 3px 3px 3px;
-    background-color:floralwhite;
+.messageRec, .messageSen {
+    width: 100%;
 }
 
-.mymsg{
-    margin: 3px 3px 3px 3px;
-     background-color:cornsilk;
+.messageRec {
+    text-align: left;
+    background-color:beige;
+}
+
+.messageSen{
+    text-align: right;
+    background-color:blanchedalmond;
 }

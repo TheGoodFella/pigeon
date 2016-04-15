@@ -1,5 +1,5 @@
-var msgOthrPosY=0;
-var msgMyPosY=0;
+var msgPosY=0;
+var yIncreaser=0;
 
 var ws = new WebSocket('ws://' + location.host + ':6969', 'echo-protocol');
 
@@ -23,12 +23,18 @@ ws.onclose = function (e) {
     alert("Connection lost.");
 };
 
-function addothrmsg()
-{
-    console.log("adding msg by other...");
-    
+function addrecmsg()
+{    
     var div = document.createElement('div');
-    div.className="msgothr";
-    div.textContent="message";
-    document.getElementById("othmsg").appendChild(div);
+    div.className="messageRec";
+    div.textContent="message received";
+    document.getElementById("chat").appendChild(div);
+}
+
+function addsenmsg()
+{
+    var div = document.createElement('div');
+    div.className="messageSen";
+    div.textContent="message sent";
+    document.getElementById("chat").appendChild(div);
 }
