@@ -57,8 +57,10 @@
 </head>
 
 <body>
-        <div id="all">
-            <div id="channels">
+    <input type="button" value="add message by other" onclick="addothrmsg()">
+    <input type="button" value="add message by me">
+        <div class="all">
+            <div class="channels">
                 <h4>Your channels</h4>
                 <ul class="nav nav-pills nav-stacked">
                     <li class="active"><a href="#section1">Channel1</a></li>
@@ -77,8 +79,16 @@
                 </div>
             </div>
 
-            <div id="chat">
-				chats
+            <div class="chat">
+				<div class="msgothrdiv" id="othmsg">
+                    
+                </div>
+                <div class="mymsgdiv">
+                    <div class="mymsg">
+                        me
+                        text:
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -1,3 +1,6 @@
+var msgOthrPosY=0;
+var msgMyPosY=0;
+
 var ws = new WebSocket('ws://' + location.host + ':6969', 'echo-protocol');
 
 ws.onopen = function (e) {
@@ -19,3 +22,13 @@ ws.onmessage = function (data) {
 ws.onclose = function (e) {
     alert("Connection lost.");
 };
+
+function addothrmsg()
+{
+    console.log("adding msg by other...");
+    
+    var div = document.createElement('div');
+    div.className="msgothr";
+    div.textContent="message";
+    document.getElementById("othmsg").appendChild(div);
+}
