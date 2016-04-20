@@ -16,3 +16,5 @@ Pigeon does not include these modules out of the box so you must have them insta
 
 #Warning:
 **The _usernames and passwords_ written in the scripts of this repository are just _examples_, if you want to clone and use our code we _strongly recommend you to change them_, to defend your safety and your data by malicious enemies**
+
+**Project temporarily interrupted**
